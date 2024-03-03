@@ -1,0 +1,15 @@
+dataset
+metrical-tracker
+**/__pycache__
+*avi
+*mp4
+*jpg
+*png
+*ply
+*txt
+*sh
+submodules
+flame/generic_model.pkl
+flame/landmark_embedding.npy
+flame/FLAME_masks
+
