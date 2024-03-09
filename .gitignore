@@ -8,7 +8,6 @@ metrical-tracker
 *ply
 *txt
 *sh
-submodules
 flame/generic_model.pkl
 flame/landmark_embedding.npy
 flame/FLAME_masks

@@ -6,7 +6,6 @@ import torch
 import math
 import numpy as np
 from tqdm import tqdm
-from natsort import natsorted
 
 from scene.gaussian_model import GaussianModel
 from scene.cameras import Camera
