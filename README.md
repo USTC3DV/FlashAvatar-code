@@ -25,12 +25,10 @@ conda install pytorch3d -c pytorch3d
 
 ## Citation
 ```
-@misc{xiang2023flashavatar,
-      title={FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS}, 
-      author={Jun Xiang and Xuan Gao and Yudong Guo and Juyong Zhang},
-      year={2023},
-      eprint={2312.02214},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+@inproceedings{xiang2024flashavatar,
+      author    = {Jun Xiang and Xuan Gao and Yudong Guo and Juyong Zhang},
+      title     = {FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS},
+      booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year      = {2024},
+  }
 ```
