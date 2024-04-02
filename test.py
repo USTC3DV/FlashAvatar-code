@@ -36,7 +36,7 @@ if __name__ == "__main__":
     parser.add_argument('--idname', type=str, default='id1_25', help='id name')
     parser.add_argument('--logname', type=str, default='log', help='log name')
     parser.add_argument('--image_res', type=int, default=512, help='image resolution')
-    parser.add_argument("--start_checkpoint", type=str, default = None)
+    parser.add_argument("--checkpoint", type=str, default = None)
     args = parser.parse_args(sys.argv[1:])
     args.device = "cuda"
     lpt = lp.extract(args)
@@ -61,8 +61,8 @@ if __name__ == "__main__":
     gaussians = GaussianModel(lpt.sh_degree)
     gaussians.training_setup(opt)
 
-    if args.start_checkpoint:
-        (model_params, gauss_params, first_iter) = torch.load(args.start_checkpoint)
+    if args.checkpoint:
+        (model_params, gauss_params, first_iter) = torch.load(args.checkpoint)
         DeformModel.restore(model_params)
         gaussians.restore(gauss_params, opt)
 

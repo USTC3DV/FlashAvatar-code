@@ -22,6 +22,33 @@ conda install -c fvcore -c iopath -c conda-forge fvcore iopath
 conda install -c bottler nvidiacub
 conda install pytorch3d -c pytorch3d
 ```
+## Data Convention
+The data is organized in the following form：
+```
+dataset
+├── <id1_name>
+    ├── alpha # raw alpha prediction
+    ├── imgs # extracted video frames
+    ├── parsing # semantic segmentation
+├── <id2_name>
+...
+metrical-tracker
+├── output
+    ├── <id1_name>
+        ├── checkpoint
+    ├── <id2_name>
+...
+```
+## Running
+- **Evaluating pre-trained model**
+```shell
+python test.py --idname <id_name> --checkpoint dataset/<id_name>/log/ckpt/chkpnt.pth
+```
+-  **Training on your own data** 
+```shell
+python train.py --idname <id_name>
+```
+Download the [example](https://drive.google.com/file/d/1_WLvlmHD73jOAO178N7eX5UQqlrL2ghD/view?usp=drive_link) with pre-processed data and pre-trained model for a try!
 
 ## Citation
 ```
