@@ -54,7 +54,7 @@ Download the [example](https://drive.google.com/file/d/1_WLvlmHD73jOAO178N7eX5UQ
 ```
 @inproceedings{xiang2024flashavatar,
       author    = {Jun Xiang and Xuan Gao and Yudong Guo and Juyong Zhang},
-      title     = {FlashAvatar: High-Fidelity Digital Avatar Rendering at 300FPS},
+      title     = {FlashAvatar: High-fidelity Head Avatar with Efficient Gaussian Embedding},
       booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
       year      = {2024},
   }
